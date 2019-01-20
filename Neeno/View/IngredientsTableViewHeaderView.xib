@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IngredientsTableViewHeaderView" customModule="Neeno" customModuleProvider="target">
+            <connections>
+                <outlet property="IngredientsLabel" destination="YFo-qY-2fq" id="UXr-nd-Bgc"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="lby-Ze-IDA"/>
+                <outlet property="coverImageView" destination="QuX-Wa-kDC" id="7z7-7v-cTE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_wood" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-z1-Enm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Xh3-z1-Enm" secondAttribute="height" multiplier="69:50" id="9in-PO-P05"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QuX-Wa-kDC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="271.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QuX-Wa-kDC" secondAttribute="height" multiplier="69:50" id="X8q-LP-R6Q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFo-qY-2fq">
+                    <rect key="frame" x="12" y="295.5" width="128.5" height="54.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1Xn-Y2-ifd"/>
+                <constraint firstItem="Xh3-z1-Enm" firstAttribute="width" secondItem="Xh3-z1-Enm" secondAttribute="height" multiplier="69:50" id="83X-6I-7as"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="bottom" secondItem="Xh3-z1-Enm" secondAttribute="bottom" id="85P-Yf-dLF"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="trailing" secondItem="Xh3-z1-Enm" secondAttribute="trailing" id="Aiy-tD-ucP"/>
+                <constraint firstAttribute="trailing" secondItem="QuX-Wa-kDC" secondAttribute="trailing" id="BFP-b1-ADz"/>
+                <constraint firstItem="YFo-qY-2fq" firstAttribute="top" secondItem="Xh3-z1-Enm" secondAttribute="bottom" constant="24" id="DjD-Sl-MOK"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="leading" secondItem="Xh3-z1-Enm" secondAttribute="leading" id="G4u-Mh-Ndj"/>
+                <constraint firstItem="YFo-qY-2fq" firstAttribute="leading" secondItem="QuX-Wa-kDC" secondAttribute="leading" constant="12" id="GfI-gG-2e8"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T8m-hr-GMv"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="top" secondItem="Xh3-z1-Enm" secondAttribute="top" id="YfW-bF-8dC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YFo-qY-2fq" secondAttribute="bottom" id="dl2-Hi-AUl"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="width" secondItem="QuX-Wa-kDC" secondAttribute="height" multiplier="69:50" id="fdX-WT-c5m"/>
+                <constraint firstItem="QuX-Wa-kDC" firstAttribute="width" secondItem="QuX-Wa-kDC" secondAttribute="height" multiplier="69:50" id="hWY-QE-29x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-236" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_wood" width="1440" height="1216"/>
+    </resources>
+</document>

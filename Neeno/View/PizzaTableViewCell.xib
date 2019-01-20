@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PizzaTableViewCell" rowHeight="178" id="KGk-i7-Jjw" customClass="PizzaTableViewCell" customModule="Neeno" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_wood" translatesAutoresizingMaskIntoConstraints="NO" id="zq3-ZI-CVP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RmW-Jz-TFa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="177.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCH-D4-Dm7">
+                        <rect key="frame" x="0.0" y="108.5" width="320" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Margherita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rau-fW-rnx">
+                                <rect key="frame" x="12" y="12" width="123.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Mozzarella, tomato sauce" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="4Oy-Wc-AaF">
+                                <rect key="frame" x="12" y="41" width="221" height="28"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvl-nz-96e">
+                                <rect key="frame" x="238" y="29.5" width="70" height="28"/>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="K9J-Dh-yYc"/>
+                                    <constraint firstAttribute="width" constant="70" id="tzA-ac-MPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="$10" image="ic_cart_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4Oy-Wc-AaF" secondAttribute="bottom" id="6yA-B2-X5S"/>
+                            <constraint firstItem="Xvl-nz-96e" firstAttribute="centerY" secondItem="rau-fW-rnx" secondAttribute="centerY" constant="17" id="JN8-8q-9kg"/>
+                            <constraint firstItem="rau-fW-rnx" firstAttribute="leading" secondItem="iCH-D4-Dm7" secondAttribute="leading" constant="12" id="OIl-jk-ukx"/>
+                            <constraint firstItem="4Oy-Wc-AaF" firstAttribute="top" secondItem="rau-fW-rnx" secondAttribute="bottom" id="RP9-8q-J1K"/>
+                            <constraint firstAttribute="height" constant="69" id="b0k-YW-rUA"/>
+                            <constraint firstItem="Xvl-nz-96e" firstAttribute="leading" secondItem="4Oy-Wc-AaF" secondAttribute="trailing" constant="5" id="gke-lj-NyS"/>
+                            <constraint firstAttribute="trailing" secondItem="Xvl-nz-96e" secondAttribute="trailing" constant="12" id="kPi-YO-YaU"/>
+                            <constraint firstItem="rau-fW-rnx" firstAttribute="top" secondItem="iCH-D4-Dm7" secondAttribute="top" constant="12" id="lJi-fh-iOx"/>
+                            <constraint firstItem="4Oy-Wc-AaF" firstAttribute="leading" secondItem="rau-fW-rnx" secondAttribute="leading" id="x54-ib-EQN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zq3-ZI-CVP" firstAttribute="trailing" secondItem="RmW-Jz-TFa" secondAttribute="trailing" id="0ne-bx-QCu"/>
+                    <constraint firstAttribute="bottom" secondItem="RmW-Jz-TFa" secondAttribute="bottom" id="3oV-sA-fqw"/>
+                    <constraint firstAttribute="trailing" secondItem="RmW-Jz-TFa" secondAttribute="trailing" id="8wG-Xv-hxm"/>
+                    <constraint firstAttribute="bottom" secondItem="iCH-D4-Dm7" secondAttribute="bottom" id="FrS-Tc-hNb"/>
+                    <constraint firstItem="RmW-Jz-TFa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JlN-o7-Hwc"/>
+                    <constraint firstItem="RmW-Jz-TFa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KY3-q9-UsO"/>
+                    <constraint firstItem="iCH-D4-Dm7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NIu-Ps-d2i"/>
+                    <constraint firstItem="zq3-ZI-CVP" firstAttribute="bottom" secondItem="RmW-Jz-TFa" secondAttribute="bottom" id="bOR-eE-Ydv"/>
+                    <constraint firstAttribute="trailing" secondItem="iCH-D4-Dm7" secondAttribute="trailing" id="dq4-Gz-aUG"/>
+                    <constraint firstItem="zq3-ZI-CVP" firstAttribute="top" secondItem="RmW-Jz-TFa" secondAttribute="top" id="f2r-JG-BKP"/>
+                    <constraint firstItem="zq3-ZI-CVP" firstAttribute="leading" secondItem="RmW-Jz-TFa" secondAttribute="leading" id="wmM-TM-tfz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coverImageView" destination="RmW-Jz-TFa" id="p9M-t9-9g8"/>
+                <outlet property="ingredientsLabel" destination="4Oy-Wc-AaF" id="fnv-v7-6f4"/>
+                <outlet property="orderButton" destination="Xvl-nz-96e" id="azd-jP-ywd"/>
+                <outlet property="pizzaLabel" destination="rau-fW-rnx" id="vva-Ef-l0t"/>
+            </connections>
+            <point key="canvasLocation" x="-32" y="61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_wood" width="1440" height="1216"/>
+        <image name="ic_cart_button" width="24" height="24"/>
+    </resources>
+</document>
